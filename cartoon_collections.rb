@@ -16,6 +16,7 @@ def long_planeteer_calls(array)
   array.each do |word|
     if word.length > 4
       true
+    end
   end
   false
 end
