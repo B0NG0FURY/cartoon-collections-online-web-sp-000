@@ -13,12 +13,11 @@ end
 
 def long_planeteer_calls(array)
   # Your code here
-  array.each do |word|
-    if word.size > 4
-      true
-    end
-  end
-  false
+  long_words = array.map {|word| word.length > 4}
+  if long_words.include?(false)
+    false
+  else
+    true
 end
 
 def find_the_cheese# code an argument here
